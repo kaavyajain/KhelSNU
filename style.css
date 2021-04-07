@@ -21,12 +21,12 @@ div
 	height: 100%;
 	
 }
-div#right
+div#left
 {
 	width: 50%;
 	
 }
-div#left
+div#right
 {
 	font-family: HeadlandOne;
 	font-style: normal;
@@ -40,10 +40,27 @@ div#left
 #home
 {
 position: absolute;
+color: #FFFFFF;
 width: 171px;
 height: 63px;
 left: 844px;
 top: 73px;
-color: #FFFFFF;
-
+}
+#sports
+{
+	position: absolute;
+	color: #FFFFFF;
+	width: 251px;
+	height: 126px;
+	left: 1058px;
+	top: 218px;
+}
+#train
+{
+	position: absolute;
+	color: #FFFFFF;
+	width: 280px;
+height: 63px;
+left: 1110px;
+top: 477px;
 }
