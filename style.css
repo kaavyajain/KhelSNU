@@ -35,25 +35,21 @@ div#right
 	line-height: 63px;
 	display: flex;
 	align-items: center;
-	text-shadow: 0px 0px 10px rgba(36, 156, 223, 1);
+	text-shadow: 0px 0px 10px rgba(246, 251, 11, 0.81);
 }
 #home
 {
 position: absolute;
 color: #FFFFFF;
-width: 171px;
-height: 63px;
-left: 844px;
+left: 800px;
 top: 73px;
 }
 #sports
 {
 	position: absolute;
 	color: #FFFFFF;
-	width: 251px;
-	height: 126px;
-	left: 1058px;
-	top: 218px;
+	left: 1050px;
+	top: 200px;
 }
 #train
 {
@@ -61,6 +57,13 @@ top: 73px;
 	color: #FFFFFF;
 	width: 280px;
 height: 63px;
-left: 1110px;
-top: 477px;
+left: 1050px;
+top: 400px;
+}
+#about
+{
+position: absolute;
+color: #FFFFFF;
+left: 800px;
+top: 527px;
 }
