@@ -28,7 +28,7 @@ div#left
 }
 div#right
 {
-	font-family: HeadlandOne;
+	font-family: Headland One;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 40px;
@@ -36,6 +36,27 @@ div#right
 	display: flex;
 	align-items: center;
 	text-shadow: 0px 0px 10px rgba(246, 251, 11, 0.81);
+}
+p
+{
+	position: absolute;
+left: 32.5px;
+right: 0%;
+top: 11.35%;
+bottom: 1.42%;
+
+font-family: Pacifico;
+font-style: normal;
+font-weight: normal;
+font-size: 70px;
+line-height: 123px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/*border: 3px solid #FFFBFB;*/
+text-shadow: 0px 0px 20px #FFFFFF;
 }
 #home
 {
