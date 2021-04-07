@@ -1,0 +1,49 @@
+*
+{
+	box-sizing: border-box;
+}
+body
+{
+	margin: 0;
+	position: relative;
+	background: rgba(0, 0, 0, 0.75);
+}
+#bg
+{
+	position: absolute;
+	width: 100%;
+	mix-blend-mode: hard-light;
+
+}
+div
+{
+	width: 100%;
+	height: 100%;
+	
+}
+div#right
+{
+	width: 50%;
+	
+}
+div#left
+{
+	font-family: HeadlandOne;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 63px;
+	display: flex;
+	align-items: center;
+	text-shadow: 0px 0px 10px rgba(36, 156, 223, 1);
+}
+#home
+{
+position: absolute;
+width: 171px;
+height: 63px;
+left: 844px;
+top: 73px;
+color: #FFFFFF;
+
+}
