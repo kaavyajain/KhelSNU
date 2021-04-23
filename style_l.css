@@ -11,10 +11,10 @@ div#bg
 {
 
 	width: 100%;
-	background-image: url(./Images/bg_gen_dark.png);
-	background-size: 100%;
+	background-image: url(./Images/bg_1.png);
 	bottom: 0;
-	background-size: cover;
+	top: 0;
+	background-size: 100%;
 	height: 625px;
 	overflow: hidden;
 	background-repeat: no-repeat;
@@ -28,13 +28,13 @@ div#bg>img
 	padding-top: 20px;
 	height: 100px;
 	float: left;
-	top: 15%;
+	top: 10%;
 	left: 75px;
 }
 #linkscontainer
 {
 	position:absolute;
-	top: 15%;
+	top: 10%;
 	right: 75px;
 	transform: translateY(-50%);
 	font-size: 20px;
@@ -51,63 +51,155 @@ a.linked:hover
 {
 	color: lightblue;
 }
-#login 
-{
+
+
+.forms-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.forms {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 150px;
+}
+
+.switcher {
 	position: absolute;
-	top: 30%;
-	right: 50%;
-	font-family: "Headland One", serif;
-	font-weight: bold;
-	transform: translateX(50%);
-	color: rgba(0,0,0,0.7);
-	font-size: 10px;
-	padding-bottom: 50px;
-}
-form 
-{
-  border: 3px solid #f1f1f1;
-  border-radius: 40px;
-  width: 400px;
-  display: inline-block;
-}
-
-input[type=text], input[type=password] {
-  width: 200px;
-  padding: 12px 20px;
-  margin: 18px 20px 20px 20px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  border-radius: 40px;
+	cursor: pointer;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0;
+	text-transform: uppercase;
+	font-family: inherit;
+	font-size: 16px;
+	letter-spacing: .5px;
+	color: black;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	transform: translateX(0);
+	transition: all .3s ease-in;
 }
 
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 200px;
+.form-wrapper.is-active .switcher-login {
+	color: black;
+	transform: translateX(112px);
 }
 
-button:hover {
-  opacity: 0.8;
+
+.form {
+	overflow: hidden;
+	min-width: 260px;
+	margin-top: 50px;
+	padding: 30px 25px;
+    border-radius: 5px;
+	transform-origin: top;
 }
 
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
+.form fieldset {
+	position: relative;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	transition: all .3s ease-in;
 }
 
-.container {
-  padding: 16px;
-  border-radius: 0 0 40px 40px;
+
+.form-wrapper.is-active fieldset {
+	opacity: 1;
+	transform: translateX(0);
+	transition: opacity .4s ease-in, transform .35s ease-in;
 }
 
-span.psw {
-  float: right;
-  padding-top: 16px;
+.form legend {
+	position: absolute;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	clip: rect(0 0 0 0);
 }
 
+.input-block {
+	margin-bottom: 20px;
+}
+
+.input-block label {
+	font-size: 14px;
+    color: #a1b4b4;
+}
+
+.input-block input {
+	display: block;
+	width: 100%;
+	margin-top: 8px;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-size: 16px;
+	line-height: 40px;
+	color: #3b4465;
+  	background: #eef9fe;
+  	border: 1px solid #cddbef;
+  	border-radius: 2px;
+}
+
+.form [type='submit'] {
+	opacity: 0;
+	display: block;
+	min-width: 120px;
+	margin: 30px auto 10px;
+	font-size: 18px;
+	line-height: 40px;
+	border-radius: 25px;
+	border: none;
+	transition: all .3s ease-out;
+}
+.form-wrapper.is-active .form-login {
+	animation: showLogin .3s ease-in forwards;
+}
+@keyframes showLogin {
+	0% {
+		background: #d7e7f1;
+		
+	}
+	50% {
+		transform: translate(0, 0);
+	}
+	100% {
+		background-color: #fff;
+	}
+}
+
+.form-wrapper.is-active .form [type='submit'] {
+	opacity: 1;
+	transform: translateX(0);
+	transition: all .4s ease-in;
+}
+
+.btn-login {
+	color: #fbfdff;
+	background: #5fb6ff;
+	transform: translateX(-30%);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: none; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darkgray; 
+  border-radius: 5px;
+}

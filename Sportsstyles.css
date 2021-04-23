@@ -1,0 +1,129 @@
+*
+{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  background-color: #d8e3e7;
+}
+div#top_banner
+{
+  background: url(./Images/banner.png);
+  width: 100%;
+  background-size: 100%;
+  position: sticky;
+  bottom: 0;
+  background-size: cover;
+  height: 400px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+
+#linkscontainer
+{
+  position:absolute;
+  top: 15%;
+  right: 75px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+#tagline 
+{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  font-family: "Headland One", serif;
+  font-weight: bolder;
+  transform: translateX(50%);
+  color: white;
+  text-shadow: 0 0 10px black;
+  font-size: 50px;
+}
+#tagline>p
+{
+  font-family: "Tangerine", serif;
+}
+a.linked
+{
+  color: white;
+  padding: 0 20px;
+  text-decoration: none; 
+}
+a.linked:hover
+{
+  color: lightblue;
+}
+h1{
+  color: red;
+}
+
+.right{
+  background-color: #5fb6ff;
+  height: 250px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.left{
+  background-color: #5fb6ff;
+  height: 250px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+
+}
+
+.innerDivLeft{
+  width: 60%;
+  height: 200px;
+  position: absolute;
+  top: 20px;
+  left: 60px;
+}
+
+.innerDivRight{
+  width: 60%;
+  height: 200px;
+  position: absolute;
+  top: 25px;
+  right: 60px;
+}
+
+
+.rightImage{
+  width: 25%;
+  height: 200px;
+  position: absolute;
+  left: 900px;
+  top: 20px;
+}
+
+.leftImage{
+  width: 25%;
+  height: 200px;
+  position: absolute;
+  right: 900px;
+  top: 25px;
+}
+
+.look{
+  font-family: Montserrat,sans-serif;
+  color: white;
+}
+#xyz
+{
+  position: absolute;
+  transform: translateY(-50%);
+  padding-top: 20px;
+  height: 100px;
+  float: left;
+  top: 15%;
+  left: 75px;
+}
